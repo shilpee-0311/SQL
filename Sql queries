@@ -40,3 +40,10 @@ FROM (
 GROUP BY num, (rn - grp)
 HAVING COUNT(*) >= 3;
 
+6)Duplicate Emails
+Ans - SELECT email AS Email
+FROM Person
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+
