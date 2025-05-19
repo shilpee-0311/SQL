@@ -61,3 +61,12 @@ WHERE
         FROM Employee 
         WHERE departmentId = e.departmentId
     )
+
+8)Game plan analysis 
+Ans - SELECT 
+    player_id, 
+    MIN(event_date) AS first_login
+FROM 
+    Activity
+GROUP BY 
+    player_id;
